@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  background-image: url(../img/bg.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.gameName {
+  font-size: 50px;
+  position: absolute;
+  top: 5.5vmin;
+  left: 10vmin;
+  font-family: "Caveat Brush", cursive;
+}
+.scores {
+  position: absolute;
+  top: 5vmin;
+  right: 25vmin;
+  font-size: 40px;
+  font-family: "Caveat Brush", cursive;
+  font-weight: 400;
+}
+#scoreGame {
+  font-size: 45px;
+  /* border: 3px solid black;
+  padding: 1px; */
+}
+#board {
+  background: linear-gradient(rgb(134, 230, 134), rgb(233, 233, 140));
+  height: 90vmin;
+  width: 90vmin;
+  border: 3px solid black;
+  position: relative;
+  right: 15vmin;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+.head {
+  background: linear-gradient(rgb(225, 99, 225), rgb(106, 106, 231));
+  border: 0.05vmin solid #04193d;
+  border-radius: 10px;
+  transform: scale(1.02);
+}
+.snake {
+  background-color: rgb(232, 83, 83);
+  border: 0.05vmin solid rgb(68, 22, 5);
+  border-radius: 10px;
+}
+.food {
+  /* background-color: green; */
+  background: linear-gradient(yellow, green);
+  border: 0.25vmin solid black;
+  border-radius: 8px;
+}
